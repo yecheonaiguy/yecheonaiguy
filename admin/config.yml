@@ -5,10 +5,10 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 collections:
-    - name: "posts"
+  - name: "posts"
     label: "게시글"
     folder: "posts"
     create: true
     fields:
-            - {label: "제목", name: "title", widget: "string"}
-            - {label: "내용", name: "body", widget: "markdown"}
+      - {label: "제목", name: "title", widget: "string"}
+      - {label: "내용", name: "body", widget: "markdown"}
