@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: yecheonaiguy/yecheonaiguy
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+    - name: "posts"
+    label: "게시글 관리"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+            - {label: "제목", name: "title", widget: "string"}
+            - {label: "내용", name: "body", widget: "markdown"}
